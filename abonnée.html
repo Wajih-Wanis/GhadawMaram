@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des abonnés</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Liste des abonnés</h1>
+<table id="abonneeTable">
+    <tr>
+        <th>cin</th>
+        <th>nom</th>
+        <th>prenom</th>
+        <th>adresse</th>
+        <th>telephone</th>
+        <th>livre_emp</th>
+    </tr>
+</table>
+
+<br>
+
+<h1>Ajout D'un abonné</h1>
+<form id="addAbonneeForm">
+    CIN Du abonné:  <input type="text" name="cin" size="20" />   <br>  <br>
+    Nom Du abonné:   <input type="text" name="nom" size="20" />   <br>  <br>
+    Prénom Du abonné:   <input type="text" name="prenom" size="20" />   <br>  <br>
+    Adresse Du abonné:   <input type="text" name="adresse" size="20" />   <br>  <br>
+    Téléphone:   <input type="text" name="telephone" size="20" />   <br>  <br>
+    livre_emp:   <input type="text" name="livre_emp" size="20" />   <br>  <br>
+    <input type="button" value="ajouter" onclick="addAbonnee()" />
+    <input type="reset" value="Reset" name="reset" />
+</form>
+
+<h1>Suppression D'un document</h1>
+<form id="deleteAbonneeForm">
+    CIN Du abonné   : <input type="text" name="cin" size="20" />   <br>  <br>
+    <input type="button" value="Supprimer" onclick="deleteAbonnee()" />
+    <input type="reset" value="Reset" name="reset" />
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des livres</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Liste des livres</h1>
+<table id="livreTable">
+    <tr>
+        <th>num</th>
+        <th>titre</th>
+        <th>nom_auteur</th>
+        <th>date_rea</th>
+        <th>nom_emp</th>
+    </tr>
+</table>
+
+<br>
+
+<h1>Ajout D'un livre</h1>
+<form id="addLivreForm">
+    num Du livre:  <input type="text" name="num" size="20" />   <br>  <br>
+    titre Du livre:   <input type="text" name="titre" size="20" />   <br>  <br>
+    nom Du auteur:   <input type="text" name="nom_auteur" size="20" />   <br>  <br>
+    date de realisation du livre:   <input type="text" name="date_rea" size="20" />   <br>  <br>
+    nom de l'emp de livre:   <input type="text" name="nom_emp" size="20" />   <br>  <br>
+    <input type="button" value="ajouter" onclick="addLivre()" />
+    <input type="reset" value="Reset" name="reset" />
+</form>
+
+<h1>Suppression D'un livre</h1>
+<form id="deleteLivreForm">
+    num Du livre   : <input type="text" name="num" size="20" />   <br>  <br>
+    <input type="button" value="Supprimer" onclick="deleteLivre()" />
+    <input type="reset" value="Reset" name="reset" />
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>

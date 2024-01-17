@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Fiches</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Liste des Fiches</h1>
+<table id="ficheTable">
+    <tr>
+        <th>id</th>
+        <th>date_emprunt</th>
+        <th>date_retour</th>
+        <th>abonné_cin</th>
+        <th>livre_num</th>
+    </tr>
+</table>
+
+<br>
+
+<h1>Ajout D'une Fiche Emprunt</h1>
+<form id="addFicheForm">
+    ID du Fiche   : &nbsp;&nbsp;  <input type="number" name="id" required="required"/>  <br>  <br>
+    Date Emrunt Du Fiche:   <input type="text" name="date_emprunt" size="20" />   <br>  <br>
+    Date Retour Du Fiche:   <input type="text" name="date_retour" size="30" />   <br>  <br>
+    abonné   :  &nbsp;&nbsp; &nbsp;<select name="abonnee" > <br> <br>
+        <!-- Options will be dynamically added here -->
+    </select>         <br>
+    livre   :  &nbsp;&nbsp; &nbsp;<select name="livre" > <br> <br>
+        <!-- Options will be dynamically added here -->
+    </select>         <br>
+
+    <input type="button" value="ajouter" onclick="addFiche()" />
+    <input type="reset" value="Reset" name="reset" />
+</form>
+
+<h1>Suppression D'une Fiche</h1>
+<form id="deleteFicheForm">
+    ID du Fiche   : &nbsp;&nbsp;  <input type="number" name="id" required="required"/>  <br>  <br>
+    <input type="button" value="Supprimer" onclick="deleteFiche()" />
+    <input type="reset" value="Reset" name="reset" />
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
